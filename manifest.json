@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "POE新聯盟3/14開",
+    "description": "Pogchamp",
+    "version": "1.0.0",
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "_comment": "TODO 修改matches",
+        "matches": [            
+          "https://www.google.com.tw/*"
+        ],
+        "js": [
+          "execute.js"
+        ]
+        ,"run_at": "document_end"
+      }
+    ]
+  }
